@@ -1,13 +1,13 @@
-package com.sqli.quote.route;
+package com.ninjasquad.quote.route;
 
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.cxf.common.message.CxfConstants;
 
-import com.sqli.quote.converter.QuoteConverter;
-import com.sqli.quote.model.Quote;
-import com.sqli.quote.model.StockQuotes;
+import com.ninjasquad.quote.converter.QuoteConverter;
+import com.ninjasquad.quote.model.Quote;
+import com.ninjasquad.quote.model.StockQuotes;
 
 public class QuoteRoute extends RouteBuilder {
 
@@ -30,7 +30,7 @@ public class QuoteRoute extends RouteBuilder {
 				})//
 				.to(QUOTE_OUT)//
 				.log("body ${body}")//
-				.unmarshal().jaxb("com.sqli.quote.model")//
+				.unmarshal().jaxb("com.ninjasquad.quote.model")//
 				.convertBodyTo(Quote.class);
 
 	}

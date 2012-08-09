@@ -1,4 +1,4 @@
-package com.sqli.quote.endpoint.out;
+package com.ninjasquad.quote.endpoint.out;
 
 import javax.jws.WebParam;
 import javax.jws.WebService;

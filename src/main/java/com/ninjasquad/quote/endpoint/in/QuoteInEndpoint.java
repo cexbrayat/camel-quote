@@ -1,10 +1,10 @@
-package com.sqli.quote.endpoint.in;
+package com.ninjasquad.quote.endpoint.in;
 
 import javax.jws.WebParam;
 import javax.jws.WebResult;
 import javax.jws.WebService;
 
-import com.sqli.quote.model.Quote;
+import com.ninjasquad.quote.model.Quote;
 
 @WebService
 public interface QuoteInEndpoint {

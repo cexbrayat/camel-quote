@@ -9,7 +9,6 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<camel-version>2.9.2</camel-version>
 		<cxf-version>2.5.3</cxf-version>
-		<logback-version>1.0.0</logback-version>
 		<jetty-version>8.1.1.v20120215</jetty-version>
 		<junit-version>4.10</junit-version>
 		<logback-version>1.0.2</logback-version>
@@ -95,9 +94,8 @@
 				</executions>
 				<configuration>
 					<target>
-						<copy
-							file="src/main/java/com/sqli/quote/model/jaxb.index"
-							tofile="target/classes/com/sqli/quote/model/jaxb.index" />
+						<copy file="src/main/java/com/ninjasquad/quote/model/jaxb.index"
+							tofile="target/classes/com/ninjasquad/quote/model/jaxb.index" />
 					</target>
 				</configuration>
 			</plugin>
@@ -148,4 +146,5 @@
 			</plugin>
 		</plugins>
 	</reporting>
+
 </project>

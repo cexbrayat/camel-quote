@@ -1,4 +1,4 @@
-package com.sqli.quote;
+package com.ninjasquad.quote.route;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,9 +9,9 @@ import org.junit.Test;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.sqli.quote.model.Quote;
+import com.ninjasquad.quote.model.Quote;
 
-public class QuoteTest extends CamelSpringTestSupport {
+public class QuoteRouteTest extends CamelSpringTestSupport {
 
 	private static final String PRICE = "price";
 	private static final String QUOTE_IN = "cxf:bean:quoteIn";
@@ -34,6 +34,7 @@ public class QuoteTest extends CamelSpringTestSupport {
 		Quote quote = template.requestBodyAndHeaders(QUOTE_IN, args, headers, Quote.class);
 		assertNotNull(quote);
 		assertEquals("Google Inc.", quote.getName());
+		assertEquals("GOOG", quote.getSymbol());
 	}
 
 }

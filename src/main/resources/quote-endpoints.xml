@@ -15,10 +15,10 @@
 	<import resource="classpath:META-INF/cxf/cxf.xml" />
 
 	<!-- Endpoint de l'esb pour le service quote -->
-	<cxf:cxfEndpoint id="quoteIn" address="{{quote.in.host}}" serviceClass="com.sqli.quote.endpoint.in.QuoteInEndpoint" />
+	<cxf:cxfEndpoint id="quoteIn" address="{{quote.in.host}}" serviceClass="com.ninjasquad.quote.endpoint.in.QuoteInEndpoint" />
 
 	<!-- Endpoint du service quote -->
 	<cxf:cxfEndpoint id="quoteOut" address="{{quote.out.host}}" wsdlURL="{{quote.out.host}}?wsdl" serviceName="{{quote.out.service}}"
-		endpointName="{{quote.out.endpoint}}" serviceClass="com.sqli.quote.endpoint.out.QuoteOutEndpoint" />
+		endpointName="{{quote.out.endpoint}}" serviceClass="com.ninjasquad.quote.endpoint.out.QuoteOutEndpoint" />
 
 </beans>

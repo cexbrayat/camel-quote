@@ -17,9 +17,10 @@
 
 	<import resource="classpath:quote-endpoints.xml" />
 
-	<camelContext xmlns="http://camel.apache.org/schema/spring">
+	<camelContext trace="true" xmlns="http://camel.apache.org/schema/spring">
 		<propertyPlaceholder id="properties" location="classpath:quote.properties" />
 		<package>com.sqli.quote.route</package>
+		<jmxAgent id="agent" createConnector="true"/>
 	</camelContext>
 
 </beans>
