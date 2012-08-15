@@ -1,5 +1,7 @@
 package com.ninjasquad.quote.converter;
 
+import java.math.BigDecimal;
+
 import org.apache.camel.Exchange;
 import org.apache.camel.NoTypeConversionAvailableException;
 import org.apache.camel.TypeConverter;
@@ -21,6 +23,7 @@ public class QuoteConverter implements TypeConverter {
 		StockQuotes stockQuotes = (StockQuotes) value;
 		StockQuote stockQuote = stockQuotes.getQuote();
 		BeanUtils.copyProperties(stockQuote, quote);
+		quote.setPrice(new BigDecimal(stockQuote.getLast()));
 		return (T) quote;
 	}
 

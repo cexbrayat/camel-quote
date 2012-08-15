@@ -20,5 +20,9 @@
 	<!-- Endpoint du service quote -->
 	<cxf:cxfEndpoint id="quoteOut" address="{{quote.out.host}}" wsdlURL="{{quote.out.host}}?wsdl" serviceName="{{quote.out.service}}"
 		endpointName="{{quote.out.endpoint}}" serviceClass="com.ninjasquad.quote.endpoint.out.QuoteOutEndpoint" />
+		
+	<!-- Endpoint du service currency -->
+	<cxf:cxfEndpoint id="currencyOut" address="{{currency.out.host}}" wsdlURL="{{currency.out.host}}?wsdl" serviceName="{{currency.out.service}}"
+		endpointName="{{currency.out.endpoint}}" serviceClass="com.ninjasquad.quote.endpoint.out.CurrencyOutEndpoint" />
 
 </beans>

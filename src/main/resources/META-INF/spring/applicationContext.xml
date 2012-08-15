@@ -19,7 +19,7 @@
 
 	<camelContext trace="true" xmlns="http://camel.apache.org/schema/spring">
 		<propertyPlaceholder id="properties" location="classpath:quote.properties" />
-		<package>com.sqli.quote.route</package>
+		<package>com.ninjasquad.quote.route</package>
 		<jmxAgent id="agent" createConnector="true"/>
 	</camelContext>
 

@@ -1,5 +1,7 @@
 package com.ninjasquad.quote.model;
 
+import java.math.BigDecimal;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 
@@ -12,6 +14,6 @@ public class Quote {
 	public String name;
 	public String symbol;
 	public String currency;
-	public String price;
+	public BigDecimal price;
 
 }
