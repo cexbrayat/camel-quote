@@ -3,13 +3,13 @@ camel-quote
 
 Why
 ---
-Sample camel project that aggregate two soap web services to create a new one.
+Sample camel project that aggregates two soap web services to create a new one.
 
-The first webservice is [stockquote](http://www.webservicex.net/stockquote.asmx?wsdl). It takes a stock name (e.g. GOOG) and send back various informations, such as complete name, last quote in USD, etc...
+The first webservice is [stockquote](http://www.webservicex.net/stockquote.asmx?wsdl). It takes a stock name (e.g. GOOG) and send back various informations, such as complete name, last quote's price in USD, etc...
 
 The second webservice is [currencyconvertor](http://www.webservicex.net/currencyconvertor.asmx?wsdl). It takes two currencies and return the rate to convert the first one into the second.
 
-The camel program wait for a soap request with a quote name and a currency, then call the two webservices to return the quote's price in the asked currency.
+The camel program waits for a soap request with a quote name and a currency, then call the two webservices to return the quote's price in the asked currency.
 
 How
 ---
